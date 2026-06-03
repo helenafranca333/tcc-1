@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Login - Rebirth Prosthetics</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #f5f5f5;
+            color: #111;
+        }
+
+        /* NAVBAR */
+        header {
+            width: 100%;
+            height: 80px;
+            background: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 40px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 28px;
+            font-weight: bold;
+            color: #1f2b63;
+        }
+
+        .logo span {
+            font-size: 18px;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            gap: 35px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #111;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #4f46e5;
+        }
+
+        .login-btn {
+            background: #dfe3ff;
+            padding: 12px 18px;
+            border-radius: 10px;
+        }
+
+        /* HERO */
+        .hero {
+            background: #232d59;
+            color: white;
+            padding: 40px;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+
+        /* LOGIN CARD */
+        .container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .login-card {
+            width: 450px;
+            background: white;
+            padding: 35px;
+            border-radius: 12px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+        }
+
+        .tabs {
+            display: flex;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 1px solid #ddd;
+        }
+
+        .tab {
+            flex: 1;
+            text-align: center;
+            padding: 12px;
+            background: #f2f2f2;
+            cursor: pointer;
+            font-weight: 600;
+        }
+
+        .tab.active {
+            background: white;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 14px;
+            color: #444;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        .input-group input:focus {
+            border-color: #4f46e5;
+        }
+
+        .options {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 25px;
+            font-size: 14px;
+        }
+
+        .options a {
+            text-decoration: none;
+            color: #4f46e5;
+        }
+
+        .login-button {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            background: #4f46e5;
+            color: white;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.3s;
+            margin-bottom: 25px;
+        }
+
+        .login-button:hover {
+            background: #4338ca;
+        }
+
+        .social-btn {
+            width: 100%;
+            padding: 14px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background: white;
+            cursor: pointer;
+            margin-bottom: 15px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .social-btn:hover {
+            background: #f3f3f3;
+        }
+
+        @media(max-width:768px) {
+
+            header {
+                padding: 20px;
+                flex-direction: column;
+                height: auto;
+                gap: 20px;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .hero {
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 28px;
+            }
+
+            .login-card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="img/logo.jpeg" alt="logo">
+            <span>RebirthProsthetics</span>
+        </div>
+
+        <nav>
+            <a href="#">Dúvidas ▼</a>
+            <a href="#">Sobre nós ▼</a>
+            <a href="#">Compre aqui ▼</a>
+            <a href="#" class="login-btn">Login/Cadastro</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Comece Agora</h1>
+        <p>Crie sua conta ou faça log in e explore sobre o app</p>
+    </section>
+
+    <div class="container">
+        <div class="login-card">
+
+            <div class="tabs">
+                <div class="tab active">Log In</div>
+                <div class="tab">Sign Up</div>
+            </div>
+
+            <div class="input-group">
+                <label>Email</label>
+                <input type="email" placeholder="">
+            </div>
+
+            <div class="input-group">
+                <label>Senha</label>
+                <input type="password" placeholder="">
+            </div>
+
+            <div class="options">
+                <label>
+                    <input type="checkbox"> Lembre-me
+                </label>
+
+                <a href="#">Esqueceu a senha?</a>
+            </div>
+
+            <button class="login-button">Entrar</button>
+
+            <button class="social-btn"> <img src="img/google_logo.png" width="20px" height="20px">Continue com Google</button>
+
+            <button class="social-btn"><img src="img/facebook_logo.png" width="20px" height="20px"> Continue com Facebook</button>
+
+        </div>
+    </div>
+<footer class="footer">
+
+            <div class="back-home">
+                <a href="#">Voltar ao início</a>
+            </div>
+
+            <div class="footer-content">
+
+                <div class="footer-column">
+
+                    <h3>Conheça-nos</h3>
+
+                    <a href="#">Sobre a empresa</a>
+                    <a href="#">Informações corporativas</a>
+                    <a href="#">Carreiras</a>
+                    <a href="#">Imprensa</a>
+                    <a href="#">Comunidade</a>
+                    <a href="#">Acessibilidade</a>
+                    <a href="#">Blog</a>
+
+                </div>
+
+                <div class="footer-column">
+
+                    <h3>Ganhe dinheiro conosco</h3>
+
+                    <a href="#">Venda na nossa plataforma</a>
+                    <a href="#">Seja nosso parceiro</a>
+                    <a href="#">Anuncie seus produtos</a>
+                    <a href="#">Publique seus serviços</a>
+                    <a href="#">Programa de afiliados</a>
+
+                </div>
+
+                <div class="footer-column">
+
+                    <h3>Pagamento</h3>
+
+                    <a href="#">Meios de pagamento</a>
+                    <a href="#">Pix</a>
+                    <a href="#">Boleto bancário</a>
+                    <a href="#">Cartão de crédito</a>
+                    <a href="#">Parcelamento</a>
+
+                </div>
+
+                <div class="footer-column">
+
+                    <h3>Deixe-nos ajudar você</h3>
+
+                    <a href="#">Minha conta</a>
+                    <a href="#">Frete e prazo de entrega</a>
+                    <a href="#">Trocas e devoluções</a>
+                    <a href="#">Central de ajuda</a>
+                    <a href="#">Políticas de privacidade</a>
+                    <a href="#">Termos de uso</a>
+                    <a href="#">Segurança</a>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <div class="footer-logo">
+                    <img src="img/logo.jpeg" alt="logo">
+                    <h2>REBIRTHPROTHETICS</h2>
+                </div>
+
+                <div class="country">
+                    🇧🇷 Brasil
+                </div>
+
+            </div>
+
+            <div class="footer-links">
+
+                <a href="#">Termos de uso</a>
+                <a href="#">Política de privacidade</a>
+                <a href="#">Cookies</a>
+                <a href="#">Anúncios baseados em interesses</a>
+
+            </div>
+
+            <p class="copyright">
+                © 2024 RebirthProsthetics. Todos os direitos reservados.
+            </p>
+
+        </footer>
+</body>
+
+</html>
