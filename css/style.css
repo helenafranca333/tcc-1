@@ -714,3 +714,11 @@ nav ul li:hover{
 .faq_duvida{
     padding: 30px;
 }
+.duvidas_linhas{
+  margin-bottom: 10px;
+}
+.titulo_duvidas{
+  background-color: #07203f;
+  width: 100%;
+  height: 30px;
+}
