@@ -673,6 +673,7 @@ nav ul li:hover{
     font-size:25px;
     cursor:pointer;
     transition:0.3s;
+    margin-top: 10px;
 }
 
 .cart:hover{
