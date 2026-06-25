@@ -723,3 +723,197 @@ nav ul li:hover{
   width: 100%;
   height: 30px;
 }
+
+/* ========================= */
+/* CARRINHO */
+/* ========================= */
+
+.carrinho-container{
+    display:flex;
+    gap:20px;
+    padding:30px;
+    background:#f3f3f3;
+    min-height:500px;
+}
+
+.carrinho-produtos{
+    flex:3;
+    background:white;
+    padding:20px;
+    border-radius:5px;
+}
+
+.titulo-carrinho{
+    display:flex;
+    justify-content:space-between;
+    border-bottom:1px solid #ddd;
+    padding-bottom:10px;
+    margin-bottom:20px;
+}
+
+.titulo-carrinho h2{
+    font-size:28px;
+}
+
+.produto-carrinho{
+    display:flex;
+    align-items:flex-start;
+    gap:20px;
+    padding-bottom:20px;
+    border-bottom:1px solid #ddd;
+}
+
+.produto-carrinho img{
+    width:160px;
+    height:160px;
+    object-fit:cover;
+    border-radius:5px;
+}
+
+.info-produto{
+    flex:1;
+}
+
+.info-produto h3{
+    font-size:24px;
+    margin-bottom:5px;
+}
+
+.info-produto p{
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.estoque{
+    color:green;
+    display:block;
+    margin-bottom:10px;
+}
+
+.info-produto a{
+    text-decoration:none;
+    color:#4b84d6;
+}
+
+.quantidade{
+    margin-top:20px;
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.quantidade button{
+    width:30px;
+    height:30px;
+    border:1px solid #999;
+    background:white;
+    cursor:pointer;
+}
+
+.favorito{
+    font-size:25px;
+    cursor:pointer;
+}
+
+.preco-produto{
+    font-size:28px;
+    font-weight:bold;
+}
+
+.finalizar{
+    display:flex;
+    justify-content:flex-end;
+    margin-top:20px;
+}
+
+.finalizar button{
+    background:#06253b;
+    color:white;
+    border:none;
+    padding:15px 40px;
+    border-radius:5px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.subtotal{
+    text-align:right;
+    margin-top:20px;
+    font-size:20px;
+}
+
+/* RESUMO ENTREGA */
+
+.resumo-entrega{
+    flex:1;
+    background:white;
+    padding:20px;
+    border:1px solid #ddd;
+    border-radius:5px;
+    height:fit-content;
+}
+
+.resumo-entrega p{
+    line-height:1.6;
+}
+
+.resumo-entrega h3{
+    color:green;
+    margin:20px 0;
+}
+
+.resumo-entrega select{
+    width:100%;
+    padding:10px;
+    margin-bottom:20px;
+}
+
+.enviado{
+    color:#666;
+    font-size:14px;
+}
+
+/* ENDEREÇO */
+
+.endereco-container{
+    display:none;
+    margin-top:30px;
+    background:#fff;
+    border:1px solid #ddd;
+}
+
+.titulo-endereco{
+    background:#a7b4ce;
+    text-align:center;
+    font-weight:bold;
+    font-size:32px;
+    padding:12px;
+}
+
+.campos-endereco{
+    display:flex;
+    justify-content:center;
+    gap:150px;
+    padding:40px;
+}
+
+.coluna{
+    display:flex;
+    flex-direction:column;
+    width:350px;
+}
+
+.coluna label{
+    font-size:28px;
+    font-weight:bold;
+    margin-bottom:8px;
+    margin-top:15px;
+}
+
+.coluna input{
+    height:45px;
+    border:none;
+    background:#d9d9d9;
+    padding:10px;
+    font-size:16px;
+}

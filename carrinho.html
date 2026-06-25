@@ -4,14 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rebirth Prosthetics - Produto</title>
+    <title>Rebirth Prosthetics - Carrinho</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
     <div class="container">
-
 
         <header>
 
@@ -23,9 +22,13 @@
             <nav>
                 <ul>
                     <li onclick="window.location.href='duvidas.html'">
-                        Dúvidas ▼</li>
+                        Dúvidas ▼
+                    </li>
+
                     <li onclick="window.location.href='index.html'">
-                        Sobre nós ▼</li>
+                        Sobre nós ▼
+                    </li>
+
                     <li onclick="window.location.href='compra.html'">
                         Compre aqui ▼
                     </li>
@@ -33,25 +36,143 @@
             </nav>
 
             <div class="header-actions">
-
                 <button class="btn-login" onclick="window.location.href='login.html'">
                     Login / Cadastro
                 </button>
-
             </div>
-            <div class="cart"><a href="carrinho.html"><img src="img/logo_cart.png" width="30px" height="30px"></a></div>
+
+            <div class="cart">
+                <a href="carrinho.html">
+                    <img src="img/logo_cart.png" width="30" height="30">
+                </a>
+            </div>
+
             <div class="search">⌕</div>
 
         </header>
 
-        <section>
-            <div>
+        <!-- CARRINHO -->
+
+        <section class="carrinho-container">
+
+            <div class="carrinho-produtos">
+
+                <div class="titulo-carrinho">
+                    <h2>Carrinho de compras</h2>
+                    <span>Preço</span>
+                </div>
+
+                <div class="produto-carrinho">
+
+                    <img src="img/protese.png" alt="Prótese">
+
+                    <div class="info-produto">
+
+                        <h3>Prótese impressa 3D 2.0 2026 - Mão</h3>
+
+                        <p>#53276328</p>
+
+                        <span class="estoque">Em estoque</span>
+
+                        <a href="#">
+                            Ver opções de pagamento
+                        </a>
+
+                        <div class="quantidade">
+
+                            <button>-</button>
+
+                            <span>1</span>
+
+                            <button>+</button>
+
+                            <span class="favorito">♡</span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="preco-produto">
+                        R$ 350,00
+                    </div>
+
+                </div>
+
+                <div class="finalizar">
+                    <button onclick="mostrarEndereco()">
+                        Realizar pedido
+                    </button>
+                </div>
+
+                <div class="subtotal">
+                    Subtotal (1 produto):
+                    <strong>R$ 350,00</strong>
+                </div>
+
+                <div id="endereco" class="endereco-container">
+
+                <div class="titulo-endereco">
+                    ENDEREÇO
+                </div>
+
+                <div class="campos-endereco">
+
+                <div class="coluna">
+
+                    <label>CEP:</label>
+                    <input type="text" placeholder="00000-000">
+
+                    <label>Cidade:</label>
+                    <input type="text" placeholder="São Paulo">
+
+                    <label>Estado:</label>
+                    <input type="text" placeholder="São Paulo">
+
+                </div>
+
+                <div class="coluna">
+
+                    <label>Bairro:</label>
+                    <input type="text" placeholder="Santana">
+
+                    <label>Rua:</label>
+                    <input type="text" placeholder="Av. Marvo">
+
+                    <label>Tipo:</label>
+                <input type="text" placeholder="Casa">
+
+                </div>
+
+                </div>
+
+                </div>
 
             </div>
-            <div>
+
+            <div class="resumo-entrega">
+
+                <p id="entrega">
+                    Entrega <strong>GRÁTIS</strong><br>
+                </p>
+
+                <h3>DISPONÍVEL</h3>
+
+                <select>
+                    <option>Quantidade: 1</option>
+                    <option>Quantidade: 2</option>
+                    <option>Quantidade: 3</option>
+                    <option>Quantidade: 4</option>
+                </select>
+
+                <p class="enviado">
+                    Enviado por <strong>REBIRTHPROSTHETICS</strong>
+                </p>
 
             </div>
+
         </section>
+
+        <!-- FOOTER -->
 
         <footer class="footer">
 
@@ -110,6 +231,37 @@
         </footer>
 
     </div>
+
+    <script>
+    const hoje = new Date();
+
+    const inicio = new Date();
+    inicio.setDate(hoje.getDate() + 3);
+
+    const fim = new Date();
+    fim.setDate(hoje.getDate() + 6);
+
+    const meses = [
+        "Janeiro", "Fevereiro", "Março", "Abril",
+        "Maio", "Junho", "Julho", "Agosto",
+        "Setembro", "Outubro", "Novembro", "Dezembro"
+    ];
+
+    document.getElementById("entrega").innerHTML =
+        `Entrega <strong>GRÁTIS</strong><br>
+        realizada entre dia ${inicio.getDate()} e ${fim.getDate()} de ${meses[fim.getMonth()]}.`;
+    </script>
+
+    <script>
+        function mostrarEndereco() {
+        document.getElementById("endereco").style.display = "block";
+
+        document.getElementById("endereco")
+        .scrollIntoView({
+                behavior: "smooth"
+        });
+}
+</script>
 
 </body>
 
