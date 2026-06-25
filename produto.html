@@ -98,14 +98,8 @@
 
             <div class="produto-entrega">
 
-                <p>Entrega <strong>GRÁTIS</strong></p>
-
-                <p>
-                    realizada entre dia 23 e 26 de Maio na primeira compra.
-                </p>
-
-                <p class="verde">
-                    Pedir dentro de 7hrs 12 min
+                <p id="entrega">
+                    Entrega <strong>GRÁTIS</strong><br>
                 </p>
 
                 <h3>DISPONÍVEL</h3>
@@ -186,6 +180,26 @@
     </footer>
 
     </div>
+
+    <script>
+    const hoje = new Date();
+
+    const inicio = new Date();
+    inicio.setDate(hoje.getDate() + 3);
+
+    const fim = new Date();
+    fim.setDate(hoje.getDate() + 6);
+
+    const meses = [
+        "Janeiro", "Fevereiro", "Março", "Abril",
+        "Maio", "Junho", "Julho", "Agosto",
+        "Setembro", "Outubro", "Novembro", "Dezembro"
+    ];
+
+    document.getElementById("entrega").innerHTML =
+        `Entrega <strong>GRÁTIS</strong><br>
+        realizada entre dia ${inicio.getDate()} e ${fim.getDate()} de ${meses[fim.getMonth()]}.`;
+    </script>
 
 </body>
 
