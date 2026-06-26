@@ -917,3 +917,58 @@ nav ul li:hover{
     padding:10px;
     font-size:16px;
 }
+/* ==========================
+   DÚVIDAS
+========================== */
+
+#titulo_duvidas{
+    width:100%;
+    background:#1d2a7a;
+    padding:10px 35px;
+    margin-top:20px;
+}
+
+#titulo_duvidas h3{
+    color:#fff;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.faq_duvida{
+    background:#fff;
+    padding:35px;
+}
+
+.faq_duvida h3{
+    font-size:22px;
+    color:#111;
+    font-weight:bold;
+    margin-top:28px;
+    margin-bottom:8px;
+}
+
+.faq_duvida p{
+    color:#666;
+    font-size:17px;
+    line-height:1.7;
+    margin-bottom:22px;
+}
+
+.duvidas_linhas{
+    margin:0;
+}
+
+.contato_duvida{
+    margin-top:40px;
+    padding-top:20px;
+    border-top:1px solid #ddd;
+}
+
+.contato_duvida h4{
+    font-size:22px;
+    margin-bottom:12px;
+}
+
+.contato_duvida p{
+    margin-bottom:6px;
+}
