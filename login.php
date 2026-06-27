@@ -1,3 +1,4 @@
+<?php $mensagem = ""; if (isset($_GET['sucesso']) && $_GET['sucesso'] == 1) { $mensagem = "Cadastro realizado com sucesso!"; } ?>   
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -258,107 +259,119 @@
 
     </header>
 
-    <section class="hero">
-        <h1>Comece Agora</h1>
-        <p>Crie sua conta ou faça log in e explore sobre o app</p>
-    </section>
+<section class="hero">
+    <h1>Comece Agora</h1>
+    <p>Crie sua conta ou faça log in e explore sobre o app</p>
+</section>
 
-    <div class="container">
-        <div class="login-card">
+<div class="container">
+    <div class="login-card">
 
-            <div class="tabs">
-                <div class="tab active"><a href="login.html">Log In</a></div>
-                <div class="tab"><a href="cadastro.php">Sign Up</a></div>
+        <div class="tabs">
+            <div class="tab active"><a href="login.php">Log In</a></div>
+            <div class="tab"><a href="cadastro.php">Sign Up</a></div>
+        </div>
+
+        <form action="php/login.php" method="POST">
+
+    <div class="input-group">
+        <label>Email</label>
+        <input type="email" name="email_usuario" required>
+    </div>
+
+    <div class="input-group">
+        <label>Senha</label>
+        <input type="password" name="senha_usuario" required>
+    </div>
+
+            <div class="options">
+                <label>
+                    <input type="checkbox"> Lembre-me
+                </label>
+
+                <a href="#">Esqueceu a senha?</a>
             </div>
-            <form>
 
-                <div class="input-group">
-                    <label>Email</label>
-                    <input type="email" placeholder="">
-                </div>
-                <div class="input-group">
-                    <label>Senha</label>
-                    <input type="password" placeholder="">
-                </div>
+                <button type="submit" class="login-button">
+        Entrar
+    </button>
 
-                <div class="options">
-                    <label>
-                        <input type="checkbox"> Lembre-me
-                    </label>
+        </form>
 
-                    <a href="#">Esqueceu a senha?</a>
-                </div>
+        <button class="social-btn" id="icon_botao_login">
+            <img src="img/google_logo.png" width="20" height="20">
+            Continue com Google
+        </button>
 
-            </form>
+        <button class="social-btn" id="icon_botao_login">
+            <img src="img/facebook_logo.png" width="20" height="20">
+            Continue com Facebook
+        </button>
 
+    </div>
+</div>
 
 
-            <button class="login-button">Entrar</button>
 
-            <button class="social-btn" id="icon_botao_login"> <img src="img/google_logo.png" width="20px" height="20px">Continue com Google</button>
+<footer class="footer">
 
-            <button class="social-btn" id="icon_botao_login"><img src="img/facebook_logo.png" width="20px" height="20px"> Continue com Facebook</button>
+        <div class="back-home">
+            <a href="index.html">Voltar ao início</a>
+        </div>
+
+        <div class="footer-content">
+
+            <div class="footer-column">
+                <h3>Empresa</h3>
+                <a href="duvidas.html">Sobre nós</a>
+                <a href="duvidas.html">Contato</a>
+                <a href="duvidas.html">Carreiras</a>
+            </div>
+
+ <div class="footer-column">
+                <h3>Produtos</h3>
+                <a href="compra.html">Próteses</a>
+                <a href="compra.html">Personalizadas</a>
+                <a href="compra.html">Acessórios</a>
+            </div>
+
+
+            <div class="footer-column">
+                <h3>Suporte</h3>
+                <a href="duvidas.html">Ajuda</a>
+                <a href="duvidas.html">FAQ</a>
+                <a href="duvidas.html">Política de Privacidade</a>
+            </div>
 
         </div>
-    </div>
 
-        <footer class="footer">
+        <div class="footer-bottom">
 
-            <div class="back-home">
-                <a href="index.html">Voltar ao início</a>
+            <div class="footer-logo">
+                <img src="img/logo.jpeg" alt="Logo">
+                <h2>RebirthProsthetics</h2>
             </div>
 
-            <div class="footer-content">
-
-                <div class="footer-column">
-                    <h3>Empresa</h3>
-                    <a href="#">Sobre nós</a>
-                    <a href="#">Contato</a>
-                    <a href="#">Carreiras</a>
-                </div>
-
-                <div class="footer-column">
-                    <h3>Produtos</h3>
-                    <a href="#">Próteses</a>
-                    <a href="#">Personalizadas</a>
-                    <a href="#">Acessórios</a>
-                </div>
-
-                <div class="footer-column">
-                    <h3>Suporte</h3>
-                    <a href="#">Ajuda</a>
-                    <a href="#">FAQ</a>
-                    <a href="#">Política de Privacidade</a>
-                </div>
-
+            <div class="country">
+                Brasil 🇧🇷
             </div>
 
-            <div class="footer-bottom">
+        </div>
 
-                <div class="footer-logo">
-                    <img src="img/logo.jpeg" alt="Logo">
-                    <h2>RebirthProsthetics</h2>
-                </div>
+        <div class="footer-links">
+            <a href="duvidas.html">Termos</a>
+            <a href="duvidas.html">Privacidade</a>
+            <a href="duvidas.html">Cookies</a>
+        </div>
 
-                <div class="country">
-                    Brasil 🇧🇷
-                </div>
+        <div class="copyright">
+            © 2025 Rebirth Prosthetics. Todos os direitos reservados.
+        </div>
 
-            </div>
-
-            <div class="footer-links">
-                <a href="#">Termos</a>
-                <a href="#">Privacidade</a>
-                <a href="#">Cookies</a>
-            </div>
-
-            <div class="copyright">
-                © 2025 Rebirth Prosthetics. Todos os direitos reservados.
-            </div>
-
-        </footer>
+    </footer>
 
     </div>
+<?php if ($mensagem != "") { ?> <script> alert("<?php echo $mensagem; ?>"); window.history.replaceState({}, document.title, "login.php"); </script> <?php } ?>
 
 </body>
 </html>

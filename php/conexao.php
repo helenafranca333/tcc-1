@@ -11,6 +11,5 @@ if (!$conexao) {
 }
 
 mysqli_set_charset($conexao, "utf8");
-
 header("Location: ../cadastro.php");
 ?>

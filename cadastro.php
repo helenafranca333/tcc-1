@@ -180,7 +180,9 @@
         .login-button:hover {
             background: #4338ca;
         }
-
+        #text_cadastro{
+            color:blue;
+        }
         .social-btn {
             width: 100%;
             padding: 14px;
@@ -267,8 +269,8 @@
         <div class="login-card">
 
             <div class="tabs">
-                <div class="tab"><a href="login.html">Log In</a></div>
-                <div class="tab active"><a href="/cadastro.html">Sign Up</a></div>
+                <div class="tab"><a href="login.php">Log In</a></div>
+                <div class="tab active"><a href="cadastro.php">Sign Up</a></div>
             </div>
             <form action="php/cadastro.php" method="post">
                 <div class="input-group">
@@ -298,12 +300,12 @@
 
                 <button class="cadastro_buttton" type="submit">Cadastrar</button>
             </form>
-            <a href="C:/Users/fatec-ams-ds3/Desktop/tcc/tcc-1/login.html">Tenho cadastro</a>
+            <a href="login.html" id="text_cadastro">Tenho cadastro</a>
         </div>
 
     </div>
     </div>
-    <footer class="footer">
+<footer class="footer">
 
         <div class="back-home">
             <a href="index.html">Voltar ao início</a>
@@ -313,23 +315,23 @@
 
             <div class="footer-column">
                 <h3>Empresa</h3>
-                <a href="#">Sobre nós</a>
-                <a href="#">Contato</a>
-                <a href="#">Carreiras</a>
+                <a href="duvidas.html">Sobre nós</a>
+                <a href="duvidas.html">Contato</a>
+                <a href="duvidas.html">Carreiras</a>
             </div>
 
             <div class="footer-column">
                 <h3>Produtos</h3>
-                <a href="#">Próteses</a>
-                <a href="#">Personalizadas</a>
-                <a href="#">Acessórios</a>
+                <a href="produto.html">Próteses</a>
+                <a href="produto.html">Personalizadas</a>
+                <a href="produto.html">Acessórios</a>
             </div>
 
             <div class="footer-column">
                 <h3>Suporte</h3>
-                <a href="#">Ajuda</a>
-                <a href="#">FAQ</a>
-                <a href="#">Política de Privacidade</a>
+                <a href="duvidas.html">Ajuda</a>
+                <a href="duvidas.html">FAQ</a>
+                <a href="duvidas.html">Política de Privacidade</a>
             </div>
 
         </div>
@@ -348,9 +350,9 @@
         </div>
 
         <div class="footer-links">
-            <a href="#">Termos</a>
-            <a href="#">Privacidade</a>
-            <a href="#">Cookies</a>
+            <a href="duvidas.html">Termos</a>
+            <a href="duvidas.html">Privacidade</a>
+            <a href="duvidas.html">Cookies</a>
         </div>
 
         <div class="copyright">
