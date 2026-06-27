@@ -1,3 +1,5 @@
+<?php $mensagem = ""; if (isset($_GET['sucesso']) && $_GET['sucesso'] == 1) { $mensagem = "Cadastro realizado com sucesso!"; } ?>   
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 
@@ -23,7 +25,7 @@
             color: #111;
         }
 
-        
+
         header {
             width: 100%;
             height: 80px;
@@ -88,7 +90,7 @@
             opacity: 0.9;
         }
 
-        
+
         .container {
             width: 100%;
             display: flex;
@@ -226,34 +228,34 @@
 
 <body>
 
-   <header>
+    <header>
 
-      <div class="logo">
-        <img src="img/logo.jpeg" alt="logo">
-        <h1>RebirthProsthetics</h1>
-      </div>
+        <div class="logo">
+            <img src="img/logo.jpeg" alt="logo">
+            <h1>RebirthProsthetics</h1>
+        </div>
 
-      <nav>
-        <ul>
-          <li onclick="window.location.href='duvidas.html'">
-            Dúvidas ▼</li>
-         <li onclick="window.location.href='index.html'">
-            Sobre nós ▼</li>
-          <li onclick="window.location.href='compra.html'">
-              Compre aqui ▼
-          </li>
-        </ul>
-      </nav>
+        <nav>
+            <ul>
+                <li onclick="window.location.href='duvidas.html'">
+                    Dúvidas ▼</li>
+                <li onclick="window.location.href='index.html'">
+                    Sobre nós ▼</li>
+                <li onclick="window.location.href='compra.html'">
+                    Compre aqui ▼
+                </li>
+            </ul>
+        </nav>
 
-      <div class="header-actions">
+        <div class="header-actions">
 
-        <button class="btn-login" onclick="window.location.href='login.html'">
-          Login / Cadastro
-        </button>
+            <button class="btn-login" onclick="window.location.href='login.html'">
+                Login / Cadastro
+            </button>
 
-      </div>
-      <div class="cart"><a href="carrinho.html"><img src="img/logo_cart.png" width="30px" height="30px"></a></div>
-      <div class="search">⌕</div>
+        </div>
+        <div class="cart"><a href="carrinho.html"><img src="img/logo_cart.png" width="30px" height="30px"></a></div>
+        <div class="search">⌕</div>
 
     </header>
     <section class="hero">
@@ -268,98 +270,97 @@
                 <div class="tab"><a href="login.html">Log In</a></div>
                 <div class="tab active"><a href="/cadastro.html">Sign Up</a></div>
             </div>
+            <form action="php/cadastro.php" method="post">
+                <div class="input-group">
+                    <label>CPF</label>
+                    <input type="text" name="cpf_usuario" id="cpf_usuario">
+                </div>
 
-            <div class="input-group">
-                <label>CPF</label>
-                <input type="text" placeholder="">
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="text" name="email_usuario" id="email_usuario">
+                </div>
+
+                <div class="input-group">
+                    <label>Nome de usuário</label>
+                    <input type="text" name="nome_usuario" id="nome_usuario">
+                </div>
+
+                <div class="input-group">
+                    <label>Senha</label>
+                    <!-- <input type="password" name="" id=""> -->
+                </div>
+
+                <div class="input-group">
+                    <label>Confirmar senha</label>
+                    <input type="password" name="senha_usuario" id="senha_usuario">
+                </div>
+
+                <button class="cadastro_buttton" type="submit">Cadastrar</button>
+            </form>
+            <a href="C:/Users/fatec-ams-ds3/Desktop/tcc/tcc-1/login.html">Tenho cadastro</a>
+        </div>
+
+    </div>
+    </div>
+    <footer class="footer">
+
+        <div class="back-home">
+            <a href="index.html">Voltar ao início</a>
+        </div>
+
+        <div class="footer-content">
+
+            <div class="footer-column">
+                <h3>Empresa</h3>
+                <a href="#">Sobre nós</a>
+                <a href="#">Contato</a>
+                <a href="#">Carreiras</a>
             </div>
 
-            <div class="input-group">
-                <label>Email</label>
-                <input type="password" placeholder="">
+            <div class="footer-column">
+                <h3>Produtos</h3>
+                <a href="#">Próteses</a>
+                <a href="#">Personalizadas</a>
+                <a href="#">Acessórios</a>
             </div>
 
-            <div class="input-group">
-                <label>Nome de usuário</label>
-                <input type="password" placeholder="">
-            </div>
-
-            <div class="input-group">
-                <label>Senha</label>
-                <input type="password" placeholder="">
-            </div>
-
-            <div class="input-group">
-                <label>Confirmar senha</label>
-                <input type="password" placeholder="">
-            </div>
-
-
-
-            <button class="cadastro_buttton">Cadastrar</button>
- 
-                    <a href="C:/Users/fatec-ams-ds3/Desktop/tcc/tcc-1/login.html">Tenho cadastro</a>
+            <div class="footer-column">
+                <h3>Suporte</h3>
+                <a href="#">Ajuda</a>
+                <a href="#">FAQ</a>
+                <a href="#">Política de Privacidade</a>
             </div>
 
         </div>
-    </div>
-       <footer class="footer">
 
-            <div class="back-home">
-                <a href="index.html">Voltar ao início</a>
+        <div class="footer-bottom">
+
+            <div class="footer-logo">
+                <img src="img/logo.jpeg" alt="Logo">
+                <h2>RebirthProsthetics</h2>
             </div>
 
-            <div class="footer-content">
-
-                <div class="footer-column">
-                    <h3>Empresa</h3>
-                    <a href="#">Sobre nós</a>
-                    <a href="#">Contato</a>
-                    <a href="#">Carreiras</a>
-                </div>
-
-                <div class="footer-column">
-                    <h3>Produtos</h3>
-                    <a href="#">Próteses</a>
-                    <a href="#">Personalizadas</a>
-                    <a href="#">Acessórios</a>
-                </div>
-
-                <div class="footer-column">
-                    <h3>Suporte</h3>
-                    <a href="#">Ajuda</a>
-                    <a href="#">FAQ</a>
-                    <a href="#">Política de Privacidade</a>
-                </div>
-
+            <div class="country">
+                Brasil 🇧🇷
             </div>
 
-            <div class="footer-bottom">
+        </div>
 
-                <div class="footer-logo">
-                    <img src="img/logo.jpeg" alt="Logo">
-                    <h2>RebirthProsthetics</h2>
-                </div>
+        <div class="footer-links">
+            <a href="#">Termos</a>
+            <a href="#">Privacidade</a>
+            <a href="#">Cookies</a>
+        </div>
 
-                <div class="country">
-                    Brasil 🇧🇷
-                </div>
+        <div class="copyright">
+            © 2025 Rebirth Prosthetics. Todos os direitos reservados.
+        </div>
 
-            </div>
-
-            <div class="footer-links">
-                <a href="#">Termos</a>
-                <a href="#">Privacidade</a>
-                <a href="#">Cookies</a>
-            </div>
-
-            <div class="copyright">
-                © 2025 Rebirth Prosthetics. Todos os direitos reservados.
-            </div>
-
-        </footer>
+    </footer>
 
     </div>
-
+<?php if ($mensagem != "") { ?> <script> alert("<?php echo $mensagem; ?>"); window.history.replaceState({}, document.title, "cadastro.php"); </script> <?php } ?>
 </body>
+
 </html>
