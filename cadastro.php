@@ -251,12 +251,12 @@
 
         <div class="header-actions">
 
-            <button class="btn-login" onclick="window.location.href='login.html'">
+            <button class="btn-login" onclick="window.location.href='login.php'">
                 Login / Cadastro
             </button>
 
         </div>
-        <div class="cart"><a href="carrinho.html"><img src="img/logo_cart.png" width="30px" height="30px"></a></div>
+        <div class="cart"><a href="carrinho.php"><img src="img/logo_cart.png" width="30px" height="30px"></a></div>
         <div class="search">⌕</div>
 
     </header>
