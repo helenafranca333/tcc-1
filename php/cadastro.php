@@ -18,6 +18,7 @@ $sql = "INSERT INTO cadastro_usuario (cpf_usuario,email_usuario,nome_usuario,sen
 mysqli_query($conexao,$sql);
 if (mysqli_query($conexao, $sql)) {
     header("Location: ../cadastro.php?sucesso=1");
+    
     exit();
 } else {
     echo "Erro: " . mysqli_error($conexao);

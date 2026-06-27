@@ -288,7 +288,7 @@
 
                 <div class="input-group">
                     <label>Senha</label>
-                    <!-- <input type="password" name="" id=""> -->
+                    <input type="password" name="" id="">
                 </div>
 
                 <div class="input-group">
